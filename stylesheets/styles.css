@@ -1,0 +1,142 @@
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans);
+/* SECTIONS */
+.sTop {
+  background: #636773;
+  color:#2e2e2e;
+  
+}
+
+
+
+.s1 {
+  background: #F2AB53;
+/*  background-image:url('../upload.jpg');
+  background-repeat:no-repeat;
+  max-width: 100%;*/
+  max-height: 100%;
+}
+
+
+.s2 {
+  background: #BB5525;
+  font-size: 30px;
+}
+
+
+.s3 {
+  background: #F0E3CC;
+}
+
+
+.s4 {
+  background: #869161;
+  color: white;
+}
+
+.s5 {
+  background: #293b4d;
+  color: white;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: block;
+  padding: 7px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.25);
+  font-weight: bold;
+  font-size: 13px;
+  color: #000;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.inner {
+  padding-top: 3em;
+}
+
+h1 {
+  /*background: white;*/
+  text-align: center;
+  color: white;
+  margin-top: 1.5em;
+}
+
+.subNavBtn {
+  border: 0px;
+  background: none;
+  font-size: 20px;
+}
+
+#s2 {
+  font-size: 30px;
+}
+
+.subMenu button {
+  /*color: #ededed;*/
+  color: white;
+  font-family: 'Ariel';
+  letter-spacing: 3px;
+  font-weight: normal;
+
+}
+
+.content {
+  font-family: 'Maven Pro';
+  color: grey;
+  font-size: 1.5em;
+  line-height: 1em;
+  text-align: center;
+  background: #F0E3CC;
+  border-radius: 2em;
+  width: 75%;
+  padding: 2em;
+  display: block;
+  margin: 0 auto;
+  margin-top: .1em;
+}
+
+
+ img {
+  transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+  display: block;
+  margin: 0 auto;
+  padding-top: -5em;
+ }
+
+ #me {
+  max-width: 100%;
+  max-height: 100%;
+  transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+  border-radius: 2em;
+ }
+
+ .container {
+  width: 100%;
+ }
+
+/*#portfolio{
+  margin-top: 1.5em;
+}
+
+#about{
+  margin-top: 1.5em;
+}*/
+
+button:hover{
+  background:none;
+}
