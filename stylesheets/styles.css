@@ -95,7 +95,7 @@ h1 {
   font-family: 'Maven Pro';
   color: grey;
   font-size: 1.5em;
-  line-height: 1em;
+  line-height: 1.25em;
   text-align: center;
   background: #F0E3CC;
   border-radius: 2em;
@@ -103,31 +103,35 @@ h1 {
   padding: 2em;
   display: block;
   margin: 0 auto;
-  margin-top: .1em;
+  /*margin-top: .1em;*/
 }
 
 
  img {
-  transform: scale(0.5, 0.5);
+/*  transform: scale(0.5, 0.5);
   -ms-transform: scale(0.5, 0.5);
-  -webkit-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);*/
   display: block;
   margin: 0 auto;
-  padding-top: -5em;
+  max-width: 50%;
+  max-height: 50%;
+
+  /*padding-top: -5em;*/
  }
 
  #me {
-  max-width: 100%;
-  max-height: 100%;
-  transform: scale(0.5, 0.5);
+  max-width: 40%;
+  max-height: 40%;
+/*  transform: scale(0.5, 0.5);
   -ms-transform: scale(0.5, 0.5);
-  -webkit-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);*/
   border-radius: 2em;
+  margin-bottom: 2em;
  }
 
- .container {
+/* .container {
   width: 100%;
- }
+ }*/
 
 /*#portfolio{
   margin-top: 1.5em;
@@ -139,4 +143,13 @@ h1 {
 
 button:hover{
   background:none;
+}
+
+#resume {
+  max-height: 75%;
+  max-width: 75%;
+}
+
+#resume-header{
+  margin-top: .5em;
 }
