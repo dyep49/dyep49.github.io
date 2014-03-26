@@ -153,3 +153,9 @@ button:hover{
 #resume-header{
   margin-top: .5em;
 }
+
+#contact {
+  font-family: 'Maven Pro';
+  font-size: 2em;
+  text-align: center;
+}
