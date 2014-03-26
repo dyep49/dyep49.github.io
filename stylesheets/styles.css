@@ -159,3 +159,9 @@ button:hover{
   font-size: 2em;
   text-align: center;
 }
+
+#porfolio li {
+  font-family: 'Maven Pro';
+  font-size: 2em;
+  text-align: center;
+}
