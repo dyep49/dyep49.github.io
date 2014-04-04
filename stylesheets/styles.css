@@ -1,0 +1,88 @@
+.nav-wrapper {
+	min-width: 100%;
+	height: 10%;
+}
+
+#nav-bar {
+	background: lightgrey;
+	margin-bottom: 2em;
+}
+
+#nav-bar ul {
+	/*margin-top: 1em;*/
+	padding-top: 1em;
+}
+
+#nav-bar li {
+	display: inline;
+	margin: .5em;
+}
+
+#name {
+	font-size: 1.5em;
+}
+
+#mobile-header {
+    display: none;
+}
+
+@media only screen and (max-width: 980px){
+
+}
+
+.sec-title {
+	margin-bottom: 2em;
+	border-bottom: 1px solid black;
+}
+
+.sec-title h2{
+	padding: .3em, .3em, .1em, .3em;	
+}
+
+#me{
+	border-radius: 2em;
+}
+
+#about-me{
+ margin: 0px !important;
+}
+
+.skill {
+	border-right: 1px solid black;
+/*	margin-right: 5px !important;
+	margin-left: 5px !important;
+*/	margin: 0px !important;
+}
+
+.skill:nth-child(3) ul {
+	text-align: center !important;
+}
+
+.skill:nth-child(3) li {
+	text-align: center;
+}
+
+.skill:last-child {
+	border-right: none;
+}
+
+.skill h4{
+	text-align: center;
+}
+
+.half-left {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.half-right {
+	width: 50%;
+	float: right;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
