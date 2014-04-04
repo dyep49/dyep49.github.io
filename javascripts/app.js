@@ -8,4 +8,7 @@ $(document).ready(function() {
 		navigation: true,
 		navigationText: ["<button class='carousel-nav'>prev</button>", "<button class='carousel-nav'>next</button>"]
 	});
+
+	$('html').smoothScroll();
+
 });
