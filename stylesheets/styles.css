@@ -29,10 +29,18 @@
 	float: right;
 }
 
+a:hover {
+	opacity: .5;
+}
 
 #name {
-	font-size: 1.5em;
+	font-size: 2.5em;
 }
+
+#name a{
+	text-decoration: none
+}
+
 
 #mobile-header {
     display: none;

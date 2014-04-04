@@ -9,6 +9,6 @@ $(document).ready(function() {
 		navigationText: ["<button class='carousel-nav'>prev</button>", "<button class='carousel-nav'>next</button>"]
 	});
 
-	$('html').smoothScroll();
+	$('html').smoothScroll(300);
 
 });
