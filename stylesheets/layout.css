@@ -43,6 +43,16 @@
     .skill {
     	border-right: 0px;
     }
+
+		.inner-div {
+			margin: 3em 0em 1em 0em;
+		}    
+
+		.icon {
+			height: 32px;
+			width: 32px;
+		}
+
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */

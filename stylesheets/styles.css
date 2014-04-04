@@ -4,7 +4,7 @@
 }
 
 #nav-bar {
-	background: lightgrey;
+	/*background: lightgrey;*/
 	margin-bottom: 2em;
 }
 
@@ -18,16 +18,22 @@
 	margin: .5em;
 }
 
+.icon {
+	height: 32px;
+	width: 32px;
+}
+
+.nav-right{
+	float: right;
+}
+
+
 #name {
 	font-size: 1.5em;
 }
 
 #mobile-header {
     display: none;
-}
-
-@media only screen and (max-width: 980px){
-
 }
 
 .sec-title {
@@ -45,6 +51,26 @@
 
 #about-me{
  margin: 0px !important;
+}
+
+.inner-div{
+	margin: 0em 3em 0em 3em;
+}
+
+#project-slider {
+	text-align: center;
+}
+
+.slide-text {
+	margin: 1em 3em 0em 3em;
+}
+
+.owl-prev {
+	display: inline-block;
+}
+
+.owl-next {
+	display: inline-block;
 }
 
 .skill {
@@ -86,3 +112,6 @@
 	text-align: center;
 }
 
+.contact {
+	margin-top: 4em;
+}
