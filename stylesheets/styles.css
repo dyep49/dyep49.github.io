@@ -13,11 +13,13 @@
 #nav-bar ul {
 	/*margin-top: 1em;*/
 	padding-top: 1em;
+	margin-right: 1em;
 }
 
 #nav-bar li {
 	display: inline;
 	margin: .5em;
+	font-size: 1.5em;
 }
 
 #nav-bar a {
@@ -33,12 +35,16 @@
 	float: right;
 }
 
+#linkedin{
+	margin: 17.5px;
+}
+
 a:hover {
 	opacity: .5;
 }
 
 #name {
-	font-size: 2.5em;
+	font-size: 2.5em !important;
 	font-family: 'Domine';
 }
 
@@ -109,6 +115,10 @@ a:hover {
 
 .skill h4{
 	text-align: center;
+}
+
+#languages {
+	margin-left: .1em !important;
 }
 
 .half-left {
