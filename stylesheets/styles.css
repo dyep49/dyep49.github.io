@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Domine);
+
 .nav-wrapper {
 	min-width: 100%;
 	height: 10%;
@@ -18,6 +20,10 @@
 	margin: .5em;
 }
 
+#nav-bar a {
+	text-decoration: none;
+}
+
 .icon {
 	height: 32px;
 	width: 32px;
@@ -33,6 +39,7 @@ a:hover {
 
 #name {
 	font-size: 2.5em;
+	font-family: 'Domine';
 }
 
 #name a{
