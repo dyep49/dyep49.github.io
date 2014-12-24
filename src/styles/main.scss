@@ -1,3 +1,6 @@
-body {
-  background: white;
-}
+//Vendor
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/neat/neat';
+
+//Base
+@import './layout';
