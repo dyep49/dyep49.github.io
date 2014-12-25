@@ -1,6 +1,11 @@
 //Vendor
 @import 'vendor/bourbon/bourbon';
+@import 'vendor/base/base';
 @import 'vendor/neat/neat';
 
 //Base
 @import './layout';
+@import './base';
+
+//Partials
+@import './partials/header';

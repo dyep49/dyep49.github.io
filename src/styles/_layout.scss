@@ -1,0 +1,12 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 5000px;
+  background: rgb(240, 240, 240);
+  font-family: sans-serif;
+  @include transition-delay(0.5s);
+  @include transition(all .5s ease-in-out);
+}
+
+
+

@@ -12,13 +12,16 @@ module.exports = function() {
 
   gulp.task('vendor', function() {
     var opts = {
-      debug: true
+      debug: true,
+      shim: {
+        'jQuery': 'global:jQuery'
+      }
     }
 
     var bundle = browserify(opts)
       .transform({global: true}, deamdify)
-      .transform({global: true}, debowerify);
-
+      .transform({global: true}, debowerify)
+      .transform('browserify-shim');
 
     libs.forEach(function(lib) {
       bundle.require(lib)

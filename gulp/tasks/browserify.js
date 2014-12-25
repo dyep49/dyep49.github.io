@@ -17,6 +17,7 @@ module.exports = function() {
 
     var bundle = browserify(opts)
       .transform({global: true}, deamdify)
+      .transform('browserify-shim');
 
     libs.forEach(function(lib) {
       bundle.external(lib)
