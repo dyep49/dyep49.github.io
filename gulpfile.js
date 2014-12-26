@@ -5,7 +5,8 @@ var gulp = require('./gulp')([
   'browserify',
   'vendor',
   'sass',
-  'jshint'
+  'jshint',
+  'mustache'
 ])
 
 gulp.task('default', ['html', 'sass', 'jshint', 'vendor', 'browserify', 'browser-sync', 'watch']);

@@ -1,0 +1,81 @@
+
+.content-container {
+  $header-text-shadow-color: black;
+  $header-text-shadow: -1px 0 $header-text-shadow-color, 0 1px $header-text-shadow-color, 1px 0 $header-text-shadow-color, 0 -1px $header-text-shadow-color;
+
+  @include outer-container;
+  padding-top: 80px;
+
+  h1 {
+    width: 50%;
+    color: white;
+    text-shadow: $header-text-shadow;
+    border-bottom: 1px solid #0f0;
+  }
+
+  .about-me-content {
+    @include span-columns(8);
+  }
+
+  .project {
+    $project-gutter: 1.4em;
+    $project-image-padding: .7em;
+    $project-image-width: 4em;
+    $project-color: $base-font-color;
+    $project-background: lighten($base-accent-color, 15);
+    $project-detail-color: transparentize($project-color, .5);
+    $project-image-vert-alignment: top;
+
+    display: table;
+    width: 100%;
+    margin-bottom: $base-spacing;
+    padding-bottom: 1em;
+    border-bottom: 1px solid transparentize($project-color, .9);
+
+    .project-image,
+    .project-content {
+      display: table-cell;
+      vertical-align: $project-image-vert-alignment;
+    }
+
+    .project-image {
+      padding-right: $project-gutter;
+
+      > img {
+        width: $project-image-width;
+        height: auto;
+        border-radius: $base-border-radius;
+        padding: $project-image-padding;
+        background: $project-background;
+        display: block;
+        max-width: none;
+      }
+
+      .project-reverse-order & {
+        padding-right: 0;
+        padding-left: 10px;
+      }
+    }
+
+    .project-content {
+      width: 100%;
+
+      h1 {
+        font-size: 1em;
+        margin-bottom: .5em;
+      }
+
+      p {
+        margin-bottom: .5em;
+      }
+
+      p.project-detail {
+        font-style: italic;
+        font-size: .9em;
+        color: $project-detail-color;
+      }
+    }
+  }
+
+
+}
