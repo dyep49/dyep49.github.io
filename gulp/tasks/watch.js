@@ -6,5 +6,5 @@ module.exports = function() {
 
   gulp.watch('./src/**/*.scss', ['sass']);
 
-  gulp.watch('./src/index.html', ['html']);
+  gulp.watch(['./src/index.html', './data/projects.json'], ['html']);
 }

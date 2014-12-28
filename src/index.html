@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="build/styles/main.css">
   <title>Dylan Yep</title>
 
@@ -24,27 +25,33 @@
 
     <div class="about-me-container">
       <h1>Stuff About Me</h1>
-      <div class="about-me-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sunt similique, aperiam vero, ut beatae minima maiores. Obcaecati voluptate, qui sequi est quaerat iste dolorem quae sed quis corporis aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sunt similique, aperiam vero, ut beatae minima maiores. Obcaecati voluptate, qui sequi est quaerat iste dolorem quae sed quis corporis aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sunt similique, aperiam vero, ut beatae minima maiores. Obcaecati voluptate, qui sequi est quaerat iste dolorem quae sed quis corporis aut.</p>
+      <div class="project content">
+        <div class="project-image">
+          <img src="http://placehold.it/400x250" alt="Logo image">
+        </div>
+        <div class="about-me-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sunt similique, aperiam vero, ut beatae minima maiores. Obcaecati voluptate, qui sequi est quaerat iste dolorem quae sed quis corporis aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sunt similique, aperiam vero, ut beatae minima maiores. Obcaecati voluptate, qui sequi est quaerat iste dolorem quae sed quis corporis aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sunt similique, aperiam vero, ut beatae minima maiores. Obcaecati voluptate, qui sequi est quaerat iste dolorem quae sed quis corporis aut.</p>
+        </div>
       </div>
     </div>
 
     <div class="made-container">
       <h1>Stuff I Made</h1>
-      <div class="made-content">
+      <div class="made-content content">
 
-        <div class="project">
-          <div class="project-image">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+        {{#projects}}
+          <div class="project">
+            <div class="project-image">
+              <a href="{{link}}" target="_blank"><img src="http://placehold.it/400x250" alt="Logo image"></a>
+            </div>
+            <div class="project-content">
+              <h2>{{name}}</h2>
+              <p>{{description}}</p>
+              <p class="project-detail"><a href="{{github}}" target="_blank"><i class="fa fa-github"></i></a></p>
+            </div>
           </div>
-          <div class="project-content">
-            <h1>First project Title or Author</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
-            <p class="project-detail">Date or details about this post</p>
-          </div>
-        </div>
+        {{/projects}}
 
-      
       </div>
     </div>
   </div>
