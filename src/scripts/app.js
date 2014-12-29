@@ -1,2 +1,2 @@
-// require('./vendor/scroll.js');
 require('./header.js');
+require('./language-chart.js')

@@ -8,10 +8,22 @@
   padding-top: 80px;
 
   h1 {
-    width: 50%;
+    width: 100%;
     color: white;
     text-shadow: $header-text-shadow;
-    border-bottom: 1px solid #0f0;
+    // border-bottom: 1px solid transparentize($base-font-color, .5);
+
+    @include media($mobile) {
+      @include span-columns(8);
+      @include shift(1);
+    }
+  }
+
+  .about-me-container {
+    
+    #me {
+      background: #0f0;
+    }
   }
 
   .about-me-content {
@@ -61,6 +73,17 @@
     .project-content {
       display: table-cell;
       vertical-align: $project-image-vert-alignment;
+
+      h2 {
+        padding: .25em .5em;
+        display: inline-block;
+        color: black;
+        background: #0f0;
+
+        @include media($mobile) {
+          margin-top: 1em;
+        }
+      }
     }
 
     .project-image {

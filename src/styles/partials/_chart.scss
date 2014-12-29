@@ -1,0 +1,33 @@
+.chart {
+  @include span-columns(11);
+}
+
+.bar rect {
+    stroke: #fff;
+    shape-rendering: crispEdges;
+}
+ 
+.bar rect.background {
+    fill: #eee;
+}
+ 
+.bar rect.percent {
+    // fill: magenta;
+}
+  
+.bar text {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    fill: #333;
+}
+ 
+.axis line {
+    stroke: #ccc;
+    stroke-width: 1;
+}
+ 
+line.median {
+    stroke: #777;
+    stroke-width: 1;
+}

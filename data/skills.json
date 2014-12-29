@@ -1,0 +1,84 @@
+{
+  "skills" : [
+    {
+      "name" : "Javascript",
+      "percent" : 50,
+      "category" : "Language"
+    },
+    {
+      "name" : "Ruby",
+      "percent" : 40,
+      "category" : "Language"
+    },
+    {
+      "name" : "HTML",
+      "percent" : 60,
+      "category" : "Language"
+    },
+    {
+      "name" : "SQL",
+      "percent" : 70,
+      "category" : "Language"
+    },
+    {
+      "name" : "CSS",
+      "percent" : 80,
+      "category" : "Language"
+    },
+    {
+      "name" : "D3js",
+      "percent" : 50,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "AngularJS",
+      "percent" : 40,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "Ruby on Rails",
+      "percent" : 60,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "NodeJS",
+      "percent" : 70,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "Sass",
+      "percent" : 80,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "AWS EC2",
+      "percent" : 40,
+      "category" : "Management/Automation/Deployment"
+    },
+    {
+      "name" : "AWS S3",
+      "percent" : 60,
+      "category" : "Management/Automation/Deployment"
+    },
+    {
+      "name" : "Heroku",
+      "percent" : 70,
+      "category" : "Management/Automation/Deployment"
+    },
+    {
+      "name" : "Gulp",
+      "percent" : 80,
+      "category" : "Management/Automation/Deployment"
+    },
+    {
+      "name" : "Grunt",
+      "percent" : 80,
+      "category" : "Management/Automation/Deployment"
+    },
+    {
+      "name" : "Git/Github",
+      "percent" : 80,
+      "category" : "Management/Automation/Deployment"
+    }
+  ]
+}

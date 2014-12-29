@@ -20,7 +20,6 @@ header.navigation {
   width: 100%;
   z-index: 999;
   position: fixed;
-  @include transition-delay(1s);
   @include transition(all .5s ease-in-out);
 
   .navigation-wrapper {
