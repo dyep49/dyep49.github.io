@@ -2,27 +2,32 @@
   "skills" : [
     {
       "name" : "Javascript",
-      "percent" : 50,
+      "percent" : 80,
       "category" : "Language"
     },
     {
       "name" : "Ruby",
-      "percent" : 40,
+      "percent" : 70,
       "category" : "Language"
     },
     {
       "name" : "HTML",
-      "percent" : 60,
+      "percent" : 80,
       "category" : "Language"
     },
     {
       "name" : "SQL",
-      "percent" : 70,
+      "percent" : 40,
       "category" : "Language"
     },
     {
       "name" : "CSS",
       "percent" : 80,
+      "category" : "Language"
+    },
+    {
+      "name" : "Haskell",
+      "percent" : 30,
       "category" : "Language"
     },
     {
@@ -51,34 +56,64 @@
       "category" : "Library/Framework"
     },
     {
-      "name" : "AWS EC2",
+      "name" : "Rspec",
+      "percent" : 30,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "Browserify",
+      "percent" : 80,
+      "category" : "Library/Framework"
+    }, 
+    {
+      "name" : "RequireJS",
       "percent" : 40,
-      "category" : "Management/Automation/Deployment"
-    },
-    {
-      "name" : "AWS S3",
-      "percent" : 60,
-      "category" : "Management/Automation/Deployment"
-    },
-    {
-      "name" : "Heroku",
-      "percent" : 70,
-      "category" : "Management/Automation/Deployment"
+      "category" : "Library/Framework"
     },
     {
       "name" : "Gulp",
       "percent" : 80,
-      "category" : "Management/Automation/Deployment"
+      "category" : "Library/Framework"
     },
     {
       "name" : "Grunt",
       "percent" : 80,
-      "category" : "Management/Automation/Deployment"
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "KnockoutJS",
+      "percent" : 70,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "MustacheJS", 
+      "percent" : 50, 
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "AWS EC2",
+      "percent" : 40,
+      "category" : "Software/Management/Deployment"
+    },
+    {
+      "name" : "AWS S3",
+      "percent" : 60,
+      "category" : "Software/Management/Deployment"
+    },
+    {
+      "name" : "Heroku",
+      "percent" : 70,
+      "category" : "Software/Management/Deployment"
     },
     {
       "name" : "Git/Github",
       "percent" : 80,
-      "category" : "Management/Automation/Deployment"
+      "category" : "Software/Management/Deployment"
+    },
+    {
+      "name" : "Adobe Photoshop",
+      "percent" : 40,
+      "category" : "Software/Management/Deployment"
     }
   ]
 }

@@ -19,7 +19,7 @@ module.exports = (function() {
   var y = d3.scale.ordinal(); 
 
   var colorScale = d3.scale.ordinal()
-                    .domain(['Language', 'Library/Framework', 'Management/Automation/Deployment'])
+                    .domain(['Language', 'Library/Framework', 'Software/Management/Deployment'])
                     .range(['#0f0', 'magenta', 'cyan']);
 
   var xAxis = d3.svg.axis()

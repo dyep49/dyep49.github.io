@@ -15,7 +15,7 @@
         <ul id="js-navigation-menu" class="navigation-menu show">
           <li class="nav-link"><a href="javascript:void(0)">Stuff About Me</a></li>
           <li class="nav-link"><a href="javascript:void(0)">Stuff I Made</a></li>
-          <li class="nav-link"><a href="javascript:void(0)">Stuff I Can Do</a></li>
+          <li class="nav-link"><a href="javascript:void(0)">Stuff I Know</a></li>
         </ul>
       </div>
     </div>
@@ -24,7 +24,7 @@
   <div class="content-container">
 
     <div class="about-me-container">
-      <h1>Stuff About Me</h1>
+      <h1><i class="fa fa-info"></i> Stuff About Me</h1>
       <div class="project content">
         <div class="project-image">
           <img src="http://placehold.it/400x250" id="me" alt="Logo image">
@@ -36,13 +36,13 @@
     </div>
 
     <div class="made-container">
-      <h1>Stuff I Made</h1>
+      <h1><i class="fa fa-code"></i> Stuff I Made</h1>
       <div class="made-content content">
 
         {{#projects}}
           <div class="project">
             <div class="project-image">
-              <a href="{{link}}" target="_blank"><img src="http://placehold.it/400x250" alt="Logo image"></a>
+              <a href="{{link}}" target="_blank"><img src="build/img/{{image}}" alt="http://placehold.it/400x250"></a>
             </div>
             <div class="project-content">
               <h2>{{name}}</h2>
@@ -56,7 +56,7 @@
     </div>
 
     <div class="do-container">
-      <h1>Stuff I Know</h1>
+      <h1><i class="fa fa-tasks"></i> Stuff I Know</h1>
 
       <div class="language-chart chart">
       </div>
