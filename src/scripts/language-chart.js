@@ -92,7 +92,11 @@ module.exports = (function() {
         .attr("transform", function (d, i) {
           var translateY = (30 * i) + height - 100
           return "translate(0," + translateY + ")";
-        });
+        })
+        .style('display', function() {
+          var mobile = d3.select('.mobile-legend').style('display') !== "none";
+          return mobile ? "none" : "block";
+        })
 
     legend.append("rect")
         .attr("x", width - 18)
@@ -117,17 +121,32 @@ module.exports = (function() {
 
   function resize() {
       // update width
-      width = parseInt(d3.select('.language-chart').style('width'), 10);
-      width = width - margin.left - margin.right;
+      var updatedWidth = parseInt(d3.select('.language-chart').style('width'), 10);
+      updatedWidth = updatedWidth - margin.left - margin.right;
 
       // resize the chart
-      x.range([0, width]);
+      x.range([0, updatedWidth]);
       d3.select(chart.node().parentNode)
           .style('height', (y.rangeExtent()[1] + margin.top + margin.bottom) + 'px')
-          .style('width', (width + margin.left + margin.right) + 'px');
+          .style('width', (updatedWidth + margin.left + margin.right) + 'px');
+
+      chart.selectAll('.legend')
+        .style('display', function() {
+          var mobile = d3.select('.mobile-legend').style('display') !== "none";
+          return mobile ? "none" : "block";
+        })
+        .attr("transform", function (d, i) {
+          var translateY = (30 * i) + height - 100
+          var translateX = updatedWidth - width;
+          console.log(translateX)
+          return "translate(" + translateX + "," + translateY + ")";
+        })
+
+
+
 
       chart.selectAll('rect.background')
-          .attr('width', width);
+          .attr('width', updatedWidth);
 
       chart.selectAll('rect.percent')
           .attr('width', function(d) { return x(d.percent / 10); });

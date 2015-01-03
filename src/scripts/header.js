@@ -27,9 +27,11 @@ module.exports = (function() {
 
   $('#js-mobile-menu').on('click', function(e) {
     e.preventDefault();
+    $('.navigation-tools').toggle();
     $('.js-navigation-menu').slideToggle(function(){
       if($('.js-navigation-menu').is(':hidden')) {
         $('.js-navigation-menu').removeAttr('style');
+        $('.navigation-tools').hide();
       }
     });
   });
