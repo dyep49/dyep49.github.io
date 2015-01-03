@@ -132,6 +132,7 @@ header.navigation {
     clear: both;
     background: $dark-gray;
     text-align: right;
+    display: none;
 
     i {
       font-size: 2.5em;
@@ -149,10 +150,8 @@ header.navigation {
       clear: none;
       padding-right: $navigation-padding;
       padding-left: $navigation-padding/2;
+      display: block;
     }
   }
 
-  .navigation-tools.hide {
-    display: none;
-  }
 }
