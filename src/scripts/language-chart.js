@@ -24,6 +24,20 @@ module.exports = (function() {
 
   var xAxis = d3.svg.axis()
       .scale(x)
+      .tickFormat(function(d) {
+        switch(d) {
+          case 3:
+            d = "3*";
+            break;
+          case 6:
+            d = "6**";
+            break;
+          case 8:
+            d = "8***";
+            break;
+        }
+        return d
+      })
 
   // create the chart
   var chart = d3.select('.language-chart').append('svg')
@@ -138,7 +152,6 @@ module.exports = (function() {
         .attr("transform", function (d, i) {
           var translateY = (30 * i) + height - 100
           var translateX = updatedWidth - width;
-          console.log(translateX)
           return "translate(" + translateX + "," + translateY + ")";
         })
 

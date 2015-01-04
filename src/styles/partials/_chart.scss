@@ -32,6 +32,12 @@ line.median {
     stroke-width: 1;
 }
 
+.footnote {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: .75em;
+}
+
 .mobile-legend {
     @include media($large-screen) {
         display: none;
@@ -67,4 +73,9 @@ line.median {
         color: cyan;
     }
 
+}
+
+.arrow {
+    fill: none;
+    stroke: magenta;
 }
