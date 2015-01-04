@@ -2,12 +2,12 @@
   "skills" : [
     {
       "name" : "Javascript",
-      "percent" : 80,
+      "percent" : 70,
       "category" : "Language"
     },
     {
       "name" : "Ruby",
-      "percent" : 70,
+      "percent" : 60,
       "category" : "Language"
     },
     {
@@ -17,12 +17,12 @@
     },
     {
       "name" : "SQL",
-      "percent" : 40,
+      "percent" : 50,
       "category" : "Language"
     },
     {
       "name" : "CSS",
-      "percent" : 80,
+      "percent" : 70,
       "category" : "Language"
     },
     {
@@ -32,12 +32,12 @@
     },
     {
       "name" : "D3js",
-      "percent" : 50,
+      "percent" : 80,
       "category" : "Library/Framework"
     },
     {
       "name" : "AngularJS",
-      "percent" : 40,
+      "percent" : 70,
       "category" : "Library/Framework"
     },
     {
@@ -47,12 +47,12 @@
     },
     {
       "name" : "NodeJS",
-      "percent" : 70,
+      "percent" : 60,
       "category" : "Library/Framework"
     },
     {
       "name" : "Sass",
-      "percent" : 80,
+      "percent" : 60,
       "category" : "Library/Framework"
     },
     {
@@ -62,7 +62,7 @@
     },
     {
       "name" : "Browserify",
-      "percent" : 80,
+      "percent" : 70,
       "category" : "Library/Framework"
     }, 
     {
@@ -72,27 +72,27 @@
     },
     {
       "name" : "Gulp",
-      "percent" : 80,
-      "category" : "Library/Framework"
-    },
-    {
-      "name" : "Grunt",
-      "percent" : 80,
-      "category" : "Library/Framework"
-    },
-    {
-      "name" : "KnockoutJS",
       "percent" : 70,
       "category" : "Library/Framework"
     },
     {
+      "name" : "Grunt",
+      "percent" : 50,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "KnockoutJS",
+      "percent" : 60,
+      "category" : "Library/Framework"
+    },
+    {
       "name" : "MustacheJS", 
-      "percent" : 50, 
+      "percent" : 60, 
       "category" : "Library/Framework"
     },
     {
       "name" : "AWS EC2",
-      "percent" : 40,
+      "percent" : 60,
       "category" : "Software/Management/Deployment"
     },
     {
@@ -102,17 +102,12 @@
     },
     {
       "name" : "Heroku",
-      "percent" : 70,
+      "percent" : 60,
       "category" : "Software/Management/Deployment"
     },
     {
       "name" : "Git/Github",
-      "percent" : 80,
-      "category" : "Software/Management/Deployment"
-    },
-    {
-      "name" : "Adobe Photoshop",
-      "percent" : 40,
+      "percent" : 70,
       "category" : "Software/Management/Deployment"
     }
   ]
