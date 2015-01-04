@@ -31,6 +31,21 @@
       "category" : "Language"
     },
     {
+      "name" : "NodeJS",
+      "percent" : 70,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "Ruby on Rails",
+      "percent" : 70,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "Sass",
+      "percent" : 60,
+      "category" : "Library/Framework"
+    },
+    {
       "name" : "D3js",
       "percent" : 80,
       "category" : "Library/Framework"
@@ -41,23 +56,13 @@
       "category" : "Library/Framework"
     },
     {
-      "name" : "Ruby on Rails",
+      "name" : "KnockoutJS",
       "percent" : 60,
       "category" : "Library/Framework"
     },
     {
-      "name" : "NodeJS",
-      "percent" : 60,
-      "category" : "Library/Framework"
-    },
-    {
-      "name" : "Sass",
-      "percent" : 60,
-      "category" : "Library/Framework"
-    },
-    {
-      "name" : "Rspec",
-      "percent" : 30,
+      "name" : "MustacheJS", 
+      "percent" : 60, 
       "category" : "Library/Framework"
     },
     {
@@ -78,16 +83,6 @@
     {
       "name" : "Grunt",
       "percent" : 50,
-      "category" : "Library/Framework"
-    },
-    {
-      "name" : "KnockoutJS",
-      "percent" : 60,
-      "category" : "Library/Framework"
-    },
-    {
-      "name" : "MustacheJS", 
-      "percent" : 60, 
       "category" : "Library/Framework"
     },
     {
