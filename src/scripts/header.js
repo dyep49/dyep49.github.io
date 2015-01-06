@@ -27,11 +27,10 @@ module.exports = (function() {
 
   $('#js-mobile-menu').on('click', function(e) {
     e.preventDefault();
-    $('.navigation-tools').toggle();
+    $('.navigation-tools').toggleClass('hide');
     $('.js-navigation-menu').slideToggle(function(){
       if($('.js-navigation-menu').is(':hidden')) {
         $('.js-navigation-menu').removeAttr('style');
-        $('.navigation-tools').hide();
       }
     });
   });

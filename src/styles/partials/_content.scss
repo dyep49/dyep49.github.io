@@ -6,6 +6,13 @@
 
   @include outer-container;
   padding-top: 80px;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  @include media($mobile) {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
 
   h1 {
     width: 100%;

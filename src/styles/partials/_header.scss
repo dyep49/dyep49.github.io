@@ -12,6 +12,7 @@ header.navigation {
   $navigation-active-link-color: transparentize(white, 0.5);
   $navigation-submenu-padding: 1em;
   $navigation-submenu-width: 12em;
+  $large-screen: em(900);
   $horizontal-bar-mode: $large-screen;
 
   background-color: $navigation-background;
@@ -48,6 +49,18 @@ header.navigation {
 
     &:hover {
       color: $navigation-color-hover;
+    }
+  }
+
+  .nav-name {
+    color: white;
+    font-size: 2em;
+    margin-top: .25em;
+    margin-left: .25em;
+    text-shadow: -1px 0 magenta, 0 1px magenta, 1px 0 magenta, 0 -1px magenta;
+
+    @include media ($horizontal-bar-mode) {
+      display: none;
     }
   }
 
@@ -97,6 +110,16 @@ header.navigation {
     width: 100%;
     z-index: 9999;
 
+    &.name {
+      font-size: 2em;
+      text-shadow: -1px 0 magenta, 0 1px magenta, 1px 0 magenta, 0 -1px magenta;
+      display: none;
+
+      @include media($horizontal-bar-mode) {
+        display: inline;
+      }
+    }
+
     @include media ($horizontal-bar-mode) {
       background: transparent;
       display: inline;
@@ -132,16 +155,19 @@ header.navigation {
     clear: both;
     background: $dark-gray;
     text-align: right;
-    display: none;
 
     i {
-      font-size: 2.5em;
-      margin-top: .2em;
+      font-size: 2.25em;
+      margin-top: .3em;
       color: $navigation-color;
     
       &:hover {
         color: $navigation-color-hover;
       }
+    }
+    
+    &.hide {
+      display: none;      
     }
 
     @include media($large-screen) {
@@ -150,7 +176,7 @@ header.navigation {
       clear: none;
       padding-right: $navigation-padding;
       padding-left: $navigation-padding/2;
-      display: block;
+      display: block !important;
     }
   }
 
