@@ -35,4 +35,32 @@ module.exports = (function() {
     });
   });
 
+
+  $.mark = {
+    jump: function (options) {
+      console.log('stuff');
+      var defaults = {
+        selector: 'a.scroll-on-page-link'
+      };
+      if (typeof options == 'string') defaults.selector = options;
+      var options = $.extend(defaults, options);
+      return $(options.selector).click(function (e) {
+        var jumpobj = $(this);
+        var target = jumpobj.attr('href');
+        var thespeed = 1000;
+        var offset = $(target).offset().top;
+        console.log('test');
+        $('html,body').animate({
+          scrollTop: offset
+        }, thespeed, 'swing')
+        e.preventDefault();
+      })
+    }
+  }
+
+
+  $(function(){  
+    $.mark.jump();
+  });
+
 }())
