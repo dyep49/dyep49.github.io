@@ -1,0 +1,124 @@
+{
+  "skills" : [
+    {
+      "name" : "Javascript",
+      "percent" : 70,
+      "category" : "Language"
+    },
+    {
+      "name" : "Ruby",
+      "percent" : 60,
+      "category" : "Language"
+    },
+    {
+      "name" : "HTML",
+      "percent" : 80,
+      "category" : "Language"
+    },
+    {
+      "name" : "SQL",
+      "percent" : 50,
+      "category" : "Language"
+    },
+    {
+      "name" : "CSS",
+      "percent" : 70,
+      "category" : "Language"
+    },
+    {
+      "name" : "Python",
+      "percent" : 40,
+      "category" : "Language"
+    },
+    {
+      "name" : "Haskell",
+      "percent" : 30,
+      "category" : "Language"
+    },
+    {
+      "name" : "NodeJS",
+      "percent" : 70,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "Ruby on Rails",
+      "percent" : 70,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "Express",
+      "percent" : 70,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "Sass",
+      "percent" : 60,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "D3js",
+      "percent" : 80,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "AngularJS",
+      "percent" : 70,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "KnockoutJS",
+      "percent" : 60,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "MustacheJS", 
+      "percent" : 60, 
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "jQuery",
+      "percent" : 70,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "Browserify",
+      "percent" : 70,
+      "category" : "Library/Framework"
+    }, 
+    {
+      "name" : "RequireJS",
+      "percent" : 40,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "Gulp",
+      "percent" : 70,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "Grunt",
+      "percent" : 50,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "AWS EC2",
+      "percent" : 60,
+      "category" : "Software/Management/Deployment"
+    },
+    {
+      "name" : "AWS S3",
+      "percent" : 60,
+      "category" : "Software/Management/Deployment"
+    },
+    {
+      "name" : "Heroku",
+      "percent" : 60,
+      "category" : "Software/Management/Deployment"
+    },
+    {
+      "name" : "Git/Github",
+      "percent" : 70,
+      "category" : "Software/Management/Deployment"
+    }
+  ]
+}

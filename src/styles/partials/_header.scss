@@ -1,0 +1,189 @@
+header.navigation {
+  $navigation-padding: 1em;
+  $navigation-background: $dark-gray;
+  $navigation-color: transparentize(white, 0.3);
+  $navigation-color-hover: magenta;
+  $navigation-height: 60px;
+  $navigation-nav-button-background: $base-accent-color;
+  $navigation-nav-button-background-hover: lighten($navigation-background, 10);
+  $navigation-nav-button-border: 1px solid lighten($navigation-nav-button-background, 20);
+  $navigation-search-background: lighten($navigation-background, 5);
+  $navigation-search-border: 1px solid darken($navigation-background, 5);
+  $navigation-active-link-color: transparentize(white, 0.5);
+  $navigation-submenu-padding: 1em;
+  $navigation-submenu-width: 12em;
+  $large-screen: 980px;
+  $horizontal-bar-mode: 980px;
+
+  background-color: $navigation-background;
+  border-bottom: 1px solid darken($navigation-background, 10);
+  min-height: $navigation-height;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  @include transition(all .5s ease-in-out);
+
+  .navigation-wrapper {
+    @include clearfix;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+  }
+
+  // Mobile view
+
+  .navigation-menu-button {
+    color: $navigation-color;
+    display: block;
+    float: right;
+    font-family: $sans-serif;
+    font-weight: 700;
+    line-height: $navigation-height;
+    margin: 0;
+    padding-right: 1em;
+    text-transform: uppercase;
+
+    @include media ($horizontal-bar-mode) {
+      display: none;
+    }
+
+    &:hover {
+      color: $navigation-color-hover;
+    }
+  }
+
+  .nav-name {
+    color: white;
+    font-weight: normal;
+    font-size: 2em;
+    margin-top: .25em;
+    margin-left: .25em;
+    text-shadow: -1px 0 magenta, 0 1px magenta, 1px 0 magenta, 0 -1px magenta;
+    width: 200px;
+
+    @include media ($horizontal-bar-mode) {
+      display: none;
+    }
+
+    &:hover {
+      color: $navigation-color-hover;
+    }
+  }
+
+  // Nav menu
+
+  .nav {
+    z-index: 9999999;
+    float: none;
+    min-height: $navigation-height;
+
+    @include media ($horizontal-bar-mode) {
+      float: left;
+    }
+  }
+
+  ul.navigation-menu {
+    -webkit-transform-style: preserve-3d; // stop webkit flicker
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 9999;
+
+    &.show {
+      display: block;
+    }
+
+    @include media ($horizontal-bar-mode) {
+      display: inline;
+      margin: 0;
+      // padding: 0;
+      padding-left: 2em;
+    }
+  }
+
+  // The nav items
+
+  ul li.nav-link {
+    background: $navigation-background;
+    display: block;
+    line-height: $navigation-height;
+    overflow: hidden;
+    padding-right: .8em;
+    text-align: right;
+    width: 100%;
+    z-index: 9999;
+
+    &.name {
+      font-size: 2em;
+      text-shadow: -1px 0 magenta, 0 1px magenta, 1px 0 magenta, 0 -1px magenta;
+      display: none;
+
+      @include media($horizontal-bar-mode) {
+        display: inline;
+      }
+    }
+
+    @include media ($horizontal-bar-mode) {
+      background: transparent;
+      display: inline;
+      line-height: $navigation-height;
+      text-decoration: none;
+      width: auto;
+    }
+
+    a {
+      color: $navigation-color;
+      display: inline-block;
+      font-weight: 400;
+
+      @include media ($horizontal-bar-mode) {
+        padding-right: 1em;
+      }
+
+      &:hover {
+        color: $navigation-color-hover;
+      }
+    }
+  }
+
+  .active-nav-item a {
+    border-bottom: 1px solid $navigation-active-link-color;
+    padding-bottom: 3px;
+  }
+
+  // Elements on the far right
+
+  .navigation-tools {
+    height: $navigation-height;
+    clear: both;
+    background: $dark-gray;
+    text-align: right;
+
+    i {
+      font-size: 2.25em;
+      margin-top: .3em;
+      color: $navigation-color;
+    
+      &:hover {
+        color: $navigation-color-hover;
+      }
+    }
+    
+    &.hide {
+      display: none;      
+    }
+
+    @include media($large-screen) {
+      background: transparent;
+      float: right;
+      clear: none;
+      padding-right: $navigation-padding;
+      padding-left: $navigation-padding/2;
+      display: block !important;
+    }
+  }
+
+}

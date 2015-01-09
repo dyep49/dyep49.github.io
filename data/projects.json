@@ -1,0 +1,95 @@
+{
+  "projects" : [
+    {
+      "name": "Umpire Auditor",
+      "description" : "Analyzes every pitch in the MLB every night, ranks umpires based on the percentage of calls they make correctly, and returns the worst call of the night. API built on Rails with an AngularJS front end hosted on Businessweek",
+      "github" : "https://github.com/dyep49/Angular-Umpire-Auditor",
+      "link" : "http:e//www.businessweek.com/graphics/baseballs-worst-call-of-the-day/#/",
+      "image" : "umpire.jpg"
+    },
+    {
+      "name" : "Other Election Map",
+      "description" : "2014 U.S. Senate election map removing Democrats and Republicans.",
+      "github" : "https://github.com/bizweekgraphics/other-election-map",
+      "link" : "http://www.bloomberg.com/politics/data/2014-11-13/the-2014-election-map-without-democrats-and-republicans",
+      "image" : "other-election.jpg"
+    },
+    {
+      "name" : "Zeppelin Game",
+      "description" : "A musical game to see if you can differentiate the famous opening of Stairway to Heaven from part of the obscure song that might have inspired it.",
+      "github" : "https://github.com/bizweekgraphics/zeppelin",
+      "link" : "http://www.businessweek.com/articles/2014-05-15/the-stairway-to-heaven-game-did-led-zeppelin-steal-the-greatest-song-opening-in-rock-history",
+      "image" : "zeppelin.jpg"
+    },
+    {
+      "name" : "FCCliefs Twitter Bot",
+      "description" : "Twitter bot loaded with public comments on net neutrality from the FCC database. Originally, in pdf form, the comments were unsearchable. Now they can be queried by tweeting at the bot. Also, if you just want to chat, FCCliefs is quite a conversationalist.",
+      "github" : "https://github.com/bizweekgraphics/twitterbot",
+      "link" : "https://twitter.com/fccliefs",
+      "image" : "fccliefs.jpg"
+    },
+    {
+      "name" : "Global tech landing",
+      "description" : "Landing page for Businessweek's Global Tech issue. Paths are added to a D3 globe as you read articles from around the world.",
+      "github" : "https://github.com/bizweekgraphics/global-tech-landing",
+      "link" : "http://www.businessweek.com/features/the-global-technology-issue-way-beyond-silicon-valley/",
+      "image" : "global-tech.jpg"
+    },
+    {
+      "name" : "American Time Use Study Interactive",
+      "description" : "Interactive based on the American Time Use Study. Allows you to compare their time usage to the average American",
+      "github" : "https://github.com/bizweekgraphics/ATUS",
+      "link" : "http://www.businessweek.com/articles/2014-07-02/interactive-graphic-how-americans-spend-their-time",
+      "image" : "atus.jpg"
+    },
+    {
+      "name" : "Stop and Frisk Visualization",
+      "description" : "A D3 visualization mapping all incidents of Stop and Frisk on January 1, 2011",
+      "github" : "https://github.com/dyep49/Node-Stop-and-Frisk",
+      "link" : "http://stop-and-frisk.herokuapp.com/",
+      "image" : "stop-and-frisk.jpg"
+    },
+    {
+      "name" : "Greenland Melts Sometimes",
+      "description" : "A D3 visualization mapping the melting of Greenland's icesheet over time.",
+      "github" : "https://github.com/bizweekgraphics/melting-greenland",
+      "link" : "http://www.bizweekgraphics.com/melting-greenland/",
+      "image" : "greenland.jpg"
+    },
+    {
+      "name" : "Saturday Night Live's 25 Top Box Office Stars",
+      "description" : "Interactive showing Saturday Night Live’s 25 top box office stars.",
+      "github" : "https://github.com/bizweekgraphics/SNL",
+      "link" : "http://www.businessweek.com/articles/2014-09-26/saturday-night-live-s-25-top-box-office-stars",
+      "image" : "snl.jpg"
+    },
+    {
+      "name" : "New World Trade Center Design Interactive",
+      "description" : "Interactive highlighting elements of the new World Trade Center's design",
+      "github" : "https://github.com/bizweekgraphics/wtc",
+      "link" : "http://www.businessweek.com/articles/2014-08-15/the-world-trade-centers-new-logo-has-at-least-six-meanings",
+      "image" : "wtc.jpg"
+    },
+    {
+      "name" : "Can a Woman Ever Win at Work?",
+      "description" : "Apparently not. A quiz based on a study highlighting the difficulties women face in office gender dynamics.",
+      "github" : "https://github.com/bizweekgraphics/quiz-workingwomen",
+      "link" : "http://www.businessweek.com/graphics/quiz-can-women-win-at-work/",
+      "image" : "working-women.jpg"
+    }, 
+    {
+      "name" : "Time Midpoint",
+      "description" : "Finds the midpoint based on travel time between two or more points in New York City. Login: test@example.com Password: password",
+      "github" : "https://github.com/dyep49/time-midpoint",
+      "link" : "http://midpoint-app.herokuapp.com/landing",
+      "image" : "midpoint.jpg"
+    },
+    {
+      "name" : "Decryptsy",
+      "description" : "Provides live updating depth charts, candlestick charts, arbitrage opportunities, and additional tools of analytsis for cryptocurrency market analysis. Backend Rails, frontend AngularJS",
+      "github" : "https://github.com/dyep49/Angular-Decryptsy",
+      "link" : "http://decryptsy.herokuapp.com/#/",
+      "image" : "decryptsy.jpg"
+    }
+  ]
+}

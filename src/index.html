@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="build/styles/main.css">
+  <title>Dylan Yep</title>
+
+  <header class="navigation">
+    <div class="navigation-wrapper">
+      <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+      <h1 class="nav-name">DYLAN YEP</h1>
+      
+      <div class="nav">
+        <ul class="js-navigation-menu navigation-menu show">
+          <li class="nav-link name"><a class="scroll-on-page-link" href="#about-me">DYLAN YEP</a></li>
+          <li class="nav-link"><a class="scroll-on-page-link" href="#about-me">Stuff About Me</a></li>
+          <li class="nav-link"><a class="scroll-on-page-link" href="#stuff-i-made">Stuff I Made</a></li>
+          <li class="nav-link"><a class="scroll-on-page-link" href="#stuff-i-know">Stuff I Know</a></li>
+          <li class="nav-link"><a href="../images/resume.pdf">Resume</a></li>
+        </ul>
+      </div>
+
+      <div class="navigation-tools hide">
+        <ul class="js-navigation-menu navigation-menu">
+          <li class="nav-link"><a href="https://github.com/dyep49" target="_blank"><i class="fa fa-github-square"></a></i></li>
+          <li class="nav-link"><a href="https://www.linkedin.com/in/dylanyep" target="_blank"><i class="fa fa-linkedin"></a></i></li>
+          <li class="nav-link"><a href="mailto:dyep49@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+      </div>
+
+
+    </div>
+
+
+  </header>
+
+  <div class="content-container">
+
+    <div class="about-me-container" id="about-me">
+      <h1><i class="fa fa-info"></i> Stuff About Me</h1>
+      <div class="project content">
+        <div class="project-image">
+          <img src="../images/me.gif" id="me" alt="Logo image">
+        </div>
+        <div class="about-me-content">
+          <p>I graduated from NYU with a degree in politics, economics, and Chinese. Of course, my next step was to become a web developer. I completed General Assembly's "Web Development Immersive" program and was hired soon after by Bloomberg Businessweek, where I'm currently an editorial developer. I make interactives, data visualizations, and assorted editorial tools using NodeJS, Ruby on Rails, D3js, AngularJS, and a bunch of other toys. Say hi on my <a href="http://www.tilde.club/~dylan/#/">tilde club page.</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="made-container" id="stuff-i-made">
+      <h1><i class="fa fa-code"></i> Stuff I Made (That I'm Allowed to Share)</h1>
+      <div class="made-content content">
+
+        {{#projects}}
+          <div class="project">
+            <div class="project-image">
+              <a href="{{link}}" target="_blank"><img src="build/img/{{image}}" alt="http://placehold.it/400x250"></a>
+            </div>
+            <div class="project-content">
+              <h2>{{name}}</h2>
+              <p>{{description}}</p>
+              <p class="project-detail"><a href="{{github}}" target="_blank"><i class="fa fa-github-square"></i></a></p>
+            </div>
+          </div>
+        {{/projects}}
+
+      </div>
+    </div>
+
+    <div class="do-container" id="stuff-i-know">
+      <h1><i class="fa fa-tasks"></i> Stuff I Know</h1>
+      <div class="language-chart chart">
+      </div>
+
+      <div class="footnote">
+        <ul>
+          <li>*Familiar. Not comfortable implementing without extensive googling.</li>
+          <li>**Proficient. I use it on a regular basis.</li>
+          <li>***Expert. Deep technical expertise in the subject.</li>
+        </ul>
+      </div>
+
+      <div class="mobile-legend">
+        <ul>
+          <li class="language">Language</li>
+          <li class="library">Library/Framework</li>
+          <li class="devops">Software/Management/Devops</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</head>
+<body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="build/scripts/vendor.js"></script>
+<script src="build/scripts/app.js"></script>
+</body>
+</html>

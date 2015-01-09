@@ -1,0 +1,154 @@
+
+.content-container {
+  $header-text-shadow-color: black;
+  $header-text-shadow: -1px 0 $header-text-shadow-color, 0 1px $header-text-shadow-color, 1px 0 $header-text-shadow-color, 0 -1px $header-text-shadow-color;
+  $mobile: new-breakpoint(max-width 500px 10);
+
+  @include outer-container;
+  padding-top: 80px;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  @include media($mobile) {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
+  h1 {
+    width: 100%;
+    color: white;
+    text-shadow: $header-text-shadow;
+    // border-bottom: 1px solid transparentize($base-font-color, .5);
+
+    @include media($mobile) {
+      // @include span-columns(8);
+      @include shift(1);
+    }
+  }
+
+  .about-me-container {
+    
+    #me {
+      background: #0f0;
+    }
+  }
+
+  .about-me-content {
+    width: 100%;
+    padding-top: 1em;
+
+    @include media($mobile) {
+      @include span-columns(8);
+      @include shift(1);
+    }
+  }
+
+  .content {
+    padding-top: 1em;
+  }
+
+  .project {
+    $project-gutter: 1.4em;
+    $project-image-padding: .7em;
+    $project-image-width: 4em;
+    $project-color: $base-font-color;
+    // $project-background: lighten($base-accent-color, 15);
+    $project-background-even: magenta;
+    $project-background-odd: #00FFFF;
+    $project-detail-color: transparentize($project-color, .5);
+    $project-image-vert-alignment: top;
+
+    display: table;
+    width: 100%;
+    margin-bottom: $base-spacing;
+    padding-bottom: 1em;
+    border-bottom: 1px solid transparentize($project-color, .9);
+
+    &:nth-child(even) {
+      img {
+        background: $project-background-even       
+      }
+    }
+
+    &:nth-child(odd) {
+      img {
+        background: $project-background-odd       
+      }
+    }
+
+    .project-image,
+    .project-content {
+      display: table-cell;
+      vertical-align: $project-image-vert-alignment;
+
+      h2 {
+        padding: .25em .5em;
+        display: inline-block;
+        color: black;
+        background: #0f0;
+
+        @include media($mobile) {
+          margin-top: 1em;
+        }
+      }
+    }
+
+    .project-image {
+      padding-right: $project-gutter;
+      @include span-columns(5);
+
+      @include media($mobile) {
+        @include span-columns(8);
+        @include shift(1);
+      }
+
+
+      img {
+        // width: $project-image-width;
+        width: 100%;
+        height: auto;
+        border-radius: $base-border-radius;
+        padding: $project-image-padding;
+        // background: $project-background;
+        display: block;
+        max-width: none;
+      }
+
+      .project-reverse-order & {
+        padding-right: 0;
+        padding-left: 10px;
+      }
+
+    }
+
+    .project-content {
+      // width: 100%;
+      @include span-columns(6);
+
+      @include media($mobile) {
+        @include span-columns(8);
+        @include shift(1);
+      }
+
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: .5em;
+      }
+
+      p {
+        margin-bottom: .5em;
+      }
+
+      p.project-detail a {
+        font-size: 2em;
+        color: black;
+
+        &:hover {
+          opacity: .5;
+        }
+      }
+    }
+  }
+
+
+}

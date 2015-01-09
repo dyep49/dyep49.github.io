@@ -1,0 +1,81 @@
+.chart {
+  @include span-columns(11);
+}
+
+.bar rect {
+    stroke: #fff;
+    shape-rendering: crispEdges;
+}
+ 
+.bar rect.background {
+    fill: #eee;
+}
+ 
+.bar rect.percent {
+    // fill: magenta;
+}
+  
+.bar text {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    fill: black;
+}
+ 
+.axis line {
+    stroke: #ccc;
+    stroke-width: 1;
+}
+ 
+line.median {
+    stroke: #777;
+    stroke-width: 1;
+}
+
+.footnote {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: .75em;
+}
+
+.mobile-legend {
+    @include media($large-screen) {
+        display: none;
+    }
+
+    display: inline-block;
+    margin-left: 20px;
+
+    li {
+        display: inline;
+        margin-top: -10px;
+        padding: 0px 10px;
+
+        &:first-child {
+            padding-left: 0px;
+        }
+    }
+
+    li:before {
+        content: "■ "; 
+        font-size: 1.5em;       
+    }
+    
+    .language:before {
+        color: #0f0;
+    }
+    
+    .library:before {
+        color: magenta;
+    }
+
+    .devops:before {
+        color: cyan;
+    }
+
+}
+
+.arrow {
+    fill: none;
+    stroke: magenta;
+}
