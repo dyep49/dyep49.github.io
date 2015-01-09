@@ -26,7 +26,9 @@
     "gulp-streamify": "0.0.5",
     "gulp-uglify": "^1.0.1",
     "vinyl-source-stream": "^1.0.0",
-    "jshint-stylish": "~1.0.0"
+    "jshint-stylish": "~1.0.0",
+    "gulp-imagemin": "~2.1.0",
+    "imagemin-jpegtran": "~4.0.0"
   },
   "dependencies": {
     "d3": "^3.5.2"
