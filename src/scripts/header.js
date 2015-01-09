@@ -38,7 +38,6 @@ module.exports = (function() {
 
   $.mark = {
     jump: function (options) {
-      console.log('stuff');
       var defaults = {
         selector: 'a.scroll-on-page-link'
       };
@@ -49,7 +48,6 @@ module.exports = (function() {
         var target = jumpobj.attr('href');
         var thespeed = 1000;
         var offset = $(target).offset().top;
-        console.log('test');
         $('html,body').animate({
           scrollTop: offset
         }, thespeed, 'swing')

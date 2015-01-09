@@ -26,6 +26,11 @@
       "category" : "Language"
     },
     {
+      "name" : "Python",
+      "percent" : 40,
+      "category" : "Language"
+    },
+    {
       "name" : "Haskell",
       "percent" : 30,
       "category" : "Language"
@@ -37,6 +42,11 @@
     },
     {
       "name" : "Ruby on Rails",
+      "percent" : 70,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "Express",
       "percent" : 70,
       "category" : "Library/Framework"
     },
@@ -63,6 +73,11 @@
     {
       "name" : "MustacheJS", 
       "percent" : 60, 
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "jQuery",
+      "percent" : 70,
       "category" : "Library/Framework"
     },
     {

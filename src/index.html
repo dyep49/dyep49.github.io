@@ -19,6 +19,7 @@
           <li class="nav-link"><a class="scroll-on-page-link" href="#about-me">Stuff About Me</a></li>
           <li class="nav-link"><a class="scroll-on-page-link" href="#stuff-i-made">Stuff I Made</a></li>
           <li class="nav-link"><a class="scroll-on-page-link" href="#stuff-i-know">Stuff I Know</a></li>
+          <li class="nav-link"><a href="../images/resume.pdf">Resume</a></li>
         </ul>
       </div>
 
@@ -41,16 +42,16 @@
       <h1><i class="fa fa-info"></i> Stuff About Me</h1>
       <div class="project content">
         <div class="project-image">
-          <img src="http://placehold.it/400x250" id="me" alt="Logo image">
+          <img src="../images/me.gif" id="me" alt="Logo image">
         </div>
         <div class="about-me-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sunt similique, aperiam vero, ut beatae minima maiores. Obcaecati voluptate, qui sequi est quaerat iste dolorem quae sed quis corporis aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sunt similique, aperiam vero, ut beatae minima maiores. Obcaecati voluptate, qui sequi est quaerat iste dolorem quae sed quis corporis aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sunt similique, aperiam vero, ut beatae minima maiores. Obcaecati voluptate, qui sequi est quaerat iste dolorem quae sed quis corporis aut.</p>
+          <p>I graduated from NYU with a degree in politics, economics, and Chinese. Of course, my next step was to become a web developer. I completed General Assembly's "Web Development Immersive" program and was hired soon after by Bloomberg Businessweek, where I'm currently an editorial developer. I make interactives, data visualizations, and assorted editorial tools using NodeJS, Ruby on Rails, D3js, AngularJS, and a bunch of other toys. Say hi on my <a href="http://www.tilde.club/~dylan/#/">tilde club page.</a></p>
         </div>
       </div>
     </div>
 
     <div class="made-container" id="stuff-i-made">
-      <h1><i class="fa fa-code"></i> Stuff I Made</h1>
+      <h1><i class="fa fa-code"></i> Stuff I Made (That I'm Allowed to Share)</h1>
       <div class="made-content content">
 
         {{#projects}}
@@ -61,7 +62,7 @@
             <div class="project-content">
               <h2>{{name}}</h2>
               <p>{{description}}</p>
-              <p class="project-detail"><a href="{{github}}" target="_blank"><i class="fa fa-github"></i></a></p>
+              <p class="project-detail"><a href="{{github}}" target="_blank"><i class="fa fa-github-square"></i></a></p>
             </div>
           </div>
         {{/projects}}
