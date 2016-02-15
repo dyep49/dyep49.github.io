@@ -4,9 +4,10 @@ var gulp = require('./gulp')([
   'watch',
   'browserify',
   'vendor',
-  'sass',
   'jshint',
-  'imagemin'
+  'imagemin',
+  'webpack-dev-server',
+  'webpack'
 ])
 
 gulp.task('default', ['html', 'sass', 'jshint', 'vendor', 'browserify', 'browser-sync', 'watch']);

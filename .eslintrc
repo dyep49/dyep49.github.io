@@ -1,0 +1,13 @@
+{ 
+  "extends": "airbnb/base",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "fix": true
+  },
+  "rules": {
+    "prefer-template": 1,
+    "no-unused-expressions": 1
+  }
+}
+
