@@ -1,5 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const projects = require('./data/projects.json');
+const projectsData = JSON.stringify({obj: projects});
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -10,11 +14,8 @@ module.exports = {
     './src/scripts/app'
   ],
   output: {
-    path: path.join(__dirname, 'build'),
-    filename: 'bundle.js'
-  },
-  externals: {
-    "jquery": "jQuery"
+    path: path.join(__dirname, 'dist'),
+    filename: 'dist_bundle.js'
   },
   devServer: {
     inline: true,
@@ -23,7 +24,14 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new webpack.optimize.UglifyJsPlugin()
+    new webpack.optimize.UglifyJsPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'apply?' + projectsData + '!jade-loader!./src/index.jade',
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    })
   ],
   module: {
     preLoaders: [
@@ -48,6 +56,17 @@ module.exports = {
           'css',
           'sass?outputStyle=expanded'
         ]
+      },
+      {
+        test: /\.jade$/,
+        loader: 'jade',
+        include: /src\/views/,
+        exclude: /node_modules/
+      },
+      {
+        test: /\.json$/,
+        loader: 'json',
+        include: /data/
       }
     ],
     eslint: {

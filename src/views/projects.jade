@@ -1,0 +1,11 @@
+- each project in projects
+ .project
+   .project-image
+     a(href='#{project.link}', target='_blank')
+       img(src='build/img/#{project.image}', alt='http://placehold.it/400x250')
+   .project-content
+     h2 #{project.name}
+     p #{project.description}
+     p.project-detail
+       a(href='#{project.github}', target='_blank')
+         i.fa.fa-github-square
