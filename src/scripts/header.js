@@ -1,35 +1,33 @@
-// var stuff = require('jquery');
-var $ = require('jquery');
-require('./vendor/scroll.js');
+const $ = require('jquery');
+import './vendor/scroll.js';
 
-module.exports = (function() {
+module.exports = (function () {
+  $(document).ready(() => {
+    let scrollInterval;
 
-  $(document).ready(function() {
-    var scrollInterval;
+    $(window).on('scrollstart', () => {
+      let top = $(window).scrollTop();
 
-    $(window).on('scrollstart', function() {
-      var top = $(window).scrollTop();
-      
-      scrollInterval = setInterval(function() {
-        var updatedTop = $(window).scrollTop();
-        var hideHeader = updatedTop > 60 && updatedTop >= top;
+      scrollInterval = setInterval(() => {
+        const updatedTop = $(window).scrollTop();
+        const hideHeader = updatedTop > 60 && updatedTop >= top;
         hideHeader ? $('header').css('top', '-60px') : $('header').css('top', '0px');
         top = updatedTop;
-      }, 250)
+      }, 250);
     });
 
-    $(window).on('scrollend', function() {
+    $(window).on('scrollend', () => {
       clearInterval(scrollInterval);
     });
-  })
+  });
 
-  $('.js-navigation-menu').removeClass("show");
+  $('.js-navigation-menu').removeClass('show');
 
-  $('#js-mobile-menu').on('click', function(e) {
+  $('#js-mobile-menu').on('click', (e) => {
     e.preventDefault();
     $('.navigation-tools').toggleClass('hide');
-    $('.js-navigation-menu').slideToggle(function(){
-      if($('.js-navigation-menu').is(':hidden')) {
+    $('.js-navigation-menu').slideToggle(() => {
+      if ($('.js-navigation-menu').is(':hidden')) {
         $('.js-navigation-menu').removeAttr('style');
       }
     });
@@ -37,28 +35,27 @@ module.exports = (function() {
 
 
   $.mark = {
-    jump: function (options) {
-      var defaults = {
-        selector: 'a.scroll-on-page-link'
+    jump: options => {
+      const defaults = {
+        selector: 'a.scroll-on-page-link',
       };
-      if (typeof options == 'string') defaults.selector = options;
-      var options = $.extend(defaults, options);
-      return $(options.selector).click(function (e) {
-        var jumpobj = $(this);
-        var target = jumpobj.attr('href');
-        var thespeed = 1000;
-        var offset = $(target).offset().top;
+      if (typeof options === 'string') defaults.selector = options;
+      const updatedOptions = $.extend(defaults, options);
+      return $(updatedOptions.selector).click(e => {
+        const jumpobj = $(e.target);
+        const target = jumpobj.attr('href');
+        const thespeed = 1000;
+        const offset = $(target).offset().top;
         $('html,body').animate({
-          scrollTop: offset
-        }, thespeed, 'swing')
+          scrollTop: offset,
+        }, thespeed, 'swing');
         e.preventDefault();
-      })
-    }
-  }
+      });
+    },
+  };
 
 
-  $(function(){  
+  $(() => {
     $.mark.jump();
   });
-
-}())
+}());

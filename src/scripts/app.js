@@ -1,2 +1,5 @@
-require('./header.js');
-require('./language-chart.js')
+'use strict';
+
+import './../styles/main.scss';
+import './header.js';
+import './language-chart.js';
