@@ -2,7 +2,7 @@
  .project
    .project-image
      a(href='#{project.link}', target='_blank')
-       img(src='build/img/#{project.image}', alt='http://placehold.it/400x250')
+       img(src=require('./../img/#{project.image}'), alt='http://placehold.it/400x250')
    .project-content
      h2 #{project.name}
      p #{project.description}

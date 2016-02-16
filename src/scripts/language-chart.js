@@ -1,6 +1,6 @@
 const d3 = require('d3');
 
-module.exports = (function () {
+module.exports = function () {
   const margin = { top: 30, right: 20, bottom: 30, left: 20 };
   const containerWidth = parseInt(d3.select('.language-chart').style('width'), 10);
   const width = containerWidth - margin.left - margin.right;
@@ -159,4 +159,4 @@ module.exports = (function () {
   }
 
   d3.json('../../data/skills.json', (err, data) => appendChart(data.skills));
-}());
+};

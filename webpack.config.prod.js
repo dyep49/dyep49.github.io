@@ -8,20 +8,24 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
     'eventsource-polyfill', // necessary for hot reloading with IE
-    'webpack/hot/dev-server',
-    'webpack-hot-middleware/client',
+    'webpack-dev-server/client?http://localhost:3333',
     './src/scripts/app'
   ],
   output: {
-    path: path.join(__dirname, '/dev'),
+    path: path.join(__dirname, 'dist'),
     filename: 'dist_bundle.js'
+  },
+  devServer: {
+    inline: true,
+    port: 3333
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.optimize.UglifyJsPlugin(),
-    new HtmlWebpackPlugin(),
-    new webpack.optimize.OccurrenceOrderPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'apply?' + jadeData + '!jade-loader!./src/index.jade',
+    }),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery"
@@ -61,14 +65,6 @@ module.exports = {
         test: /\.json$/,
         loader: 'json',
         include: /data/
-      },
-      {
-        test: /\.(png|jpg)$/,
-        loader: 'url?limit=25000'
-      },
-      {
-        test: /\.gif$/,
-        loader: 'file'
       }
     ],
     eslint: {
