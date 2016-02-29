@@ -5,22 +5,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const jadeData = JSON.stringify({obj: require('./data/projects.json')});
 
 module.exports = {
-  devtool: 'cheap-module-eval-source-map',
   entry: [
-    'eventsource-polyfill', // necessary for hot reloading with IE
-    'webpack-dev-server/client?http://localhost:3333',
     './src/scripts/app'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'dist_bundle.js'
   },
-  devServer: {
-    inline: true,
-    port: 3333
-  },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.optimize.UglifyJsPlugin(),
     new HtmlWebpackPlugin({
@@ -65,6 +57,14 @@ module.exports = {
         test: /\.json$/,
         loader: 'json',
         include: /data/
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url?limit=25000'
+      },
+      {
+        test: /\.gif$/,
+        loader: 'file'
       }
     ],
     eslint: {

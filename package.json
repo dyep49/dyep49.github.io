@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "webpack": "node ./node_modules/webpack/bin/webpack.js ./src/scripts/app.js",
-    "devdebug": "node debug ./node_modules/webpack/bin/webpack.js ./src/scripts/app.js --debug"
+    "devdebug": "node debug ./node_modules/webpack/bin/webpack.js ./src/scripts/app.js --debug",
+    "build": "node ./node_modules/webpack/bin/webpack.js --config webpack.config.prod.js"
   },
   "author": "",
   "license": "ISC",
