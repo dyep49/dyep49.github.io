@@ -11,6 +11,11 @@
       "category" : "Language"
     },
     {
+      "name" : "Python",
+      "percent" : 60,
+      "category" : "Language"
+    },
+    {
       "name" : "HTML",
       "percent" : 80,
       "category" : "Language"
@@ -26,23 +31,18 @@
       "category" : "Language"
     },
     {
-      "name" : "Python",
-      "percent" : 40,
-      "category" : "Language"
-    },
-    {
-      "name" : "Haskell",
-      "percent" : 30,
-      "category" : "Language"
-    },
-    {
-      "name" : "NodeJS",
+      "name" : "Node.js",
       "percent" : 70,
       "category" : "Library/Framework"
     },
     {
       "name" : "Ruby on Rails",
       "percent" : 70,
+      "category" : "Library/Framework"
+    },
+    {
+      "name" : "Django",
+      "percent": 60,
       "category" : "Library/Framework"
     },
     {
@@ -101,24 +101,89 @@
       "category" : "Library/Framework"
     },
     {
-      "name" : "AWS EC2",
-      "percent" : 60,
-      "category" : "Software/Management/Deployment"
+      "name": "React",
+      "percent": 60,
+      "category" : "Library/Framework"
     },
     {
-      "name" : "AWS S3",
+      "name": "vue.js",
+      "percent": 60,
+      "category": "Library/Framework"
+    },
+    {
+      "name": "webpack",
+      "percent": 60, 
+      "category": "Library/Framework"
+    },
+    {
+      "name" : "AWS EC2",
       "percent" : 60,
-      "category" : "Software/Management/Deployment"
+      "category" : "Everything Else"
+    },
+    {
+      "name" : "MongoDB",
+      "percent": 60,
+      "category" : "Everything Else"
+    },
+    {
+      "name" : "Postgres",
+      "percent": 60,
+      "category" : "Everything Else"
+    },
+    {
+      "name" : "Microsoft Azure",
+      "percent" : 60,
+      "category" : "Everything Else"
+    },
+    {
+      "name": "IBM Bluemix",
+      "percent": 60,
+      "category": "Everything Else"
     },
     {
       "name" : "Heroku",
       "percent" : 60,
-      "category" : "Software/Management/Deployment"
+      "category" : "Everything Else"
     },
     {
       "name" : "Git/Github",
       "percent" : 70,
-      "category" : "Software/Management/Deployment"
+      "category" : "Everything Else"
+    },
+    {
+      "name" : "Ansible",
+      "percent": 60,
+      "category" : "Everything Else"
+    },
+    {
+      "name" : "Docker",
+      "percent": 70,
+      "category" : "Everything Else"
+    },
+    {
+      "name" : "Vagrant",
+      "percent": 60,
+      "category" : "Everything Else"
+    },
+    {
+      "name" : "Kubernetes",
+      "percent": 70,
+      "category" : "Everything Else"
+    },
+    {
+      "name" : "Jenkins",
+      "percent": 70,
+      "category" : "Everything Else"
+    },
+    {
+      "name" : "Terraform",
+      "percent": 60,
+      "category" : "Everything Else"
+    },
+    {
+      "name" : "CoreOS",
+      "percent": 60,
+      "category" : "Everything Else"
     }
   ]
 }

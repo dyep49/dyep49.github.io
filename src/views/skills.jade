@@ -1,0 +1,11 @@
+mixin skill_list(skills, category, cls)
+  h3
+    | #{category}
+  ul
+  - each skill in skills
+    - var cat = skill.category
+      if cat === category
+        li
+          button(class=cls)
+            i.fa.fa-check-square
+            |   #{skill.name}
