@@ -43,53 +43,11 @@
       "image" : "atus.jpg"
     },
     {
-      "name" : "Stop and Frisk Visualization",
-      "description" : "A D3 visualization mapping all incidents of Stop and Frisk on January 1, 2011",
-      "github" : "https://github.com/dyep49/Node-Stop-and-Frisk",
-      "link" : "http://stop-and-frisk.herokuapp.com/",
-      "image" : "stop-and-frisk.jpg"
-    },
-    {
-      "name" : "Greenland Melts Sometimes",
-      "description" : "A D3 visualization mapping the melting of Greenland's icesheet over time.",
-      "github" : "https://github.com/bizweekgraphics/melting-greenland",
-      "link" : "http://www.bizweekgraphics.com/melting-greenland/",
-      "image" : "greenland.jpg"
-    },
-    {
-      "name" : "Saturday Night Live's 25 Top Box Office Stars",
-      "description" : "Interactive showing Saturday Night Live’s 25 top box office stars.",
-      "github" : "https://github.com/bizweekgraphics/SNL",
-      "link" : "http://www.businessweek.com/articles/2014-09-26/saturday-night-live-s-25-top-box-office-stars",
-      "image" : "snl.jpg"
-    },
-    {
-      "name" : "New World Trade Center Design Interactive",
-      "description" : "Interactive highlighting elements of the new World Trade Center's design",
-      "github" : "https://github.com/bizweekgraphics/wtc",
-      "link" : "http://www.businessweek.com/articles/2014-08-15/the-world-trade-centers-new-logo-has-at-least-six-meanings",
-      "image" : "wtc.jpg"
-    },
-    {
       "name" : "Can a Woman Ever Win at Work?",
       "description" : "Apparently not. A quiz based on a study highlighting the difficulties women face in office gender dynamics.",
       "github" : "https://github.com/bizweekgraphics/quiz-workingwomen",
       "link" : "http://www.businessweek.com/graphics/quiz-can-women-win-at-work/",
       "image" : "working-women.jpg"
-    }, 
-    {
-      "name" : "Time Midpoint",
-      "description" : "Finds the midpoint based on travel time between two or more points in New York City. Login: test@example.com Password: password",
-      "github" : "https://github.com/dyep49/time-midpoint",
-      "link" : "http://midpoint-app.herokuapp.com/landing",
-      "image" : "midpoint.jpg"
-    },
-    {
-      "name" : "Decryptsy",
-      "description" : "Provides live updating depth charts, candlestick charts, arbitrage opportunities, and additional tools of analytsis for cryptocurrency market analysis. Backend Rails, frontend AngularJS",
-      "github" : "https://github.com/dyep49/Angular-Decryptsy",
-      "link" : "http://decryptsy.herokuapp.com/#/",
-      "image" : "decryptsy.jpg"
-    }
+    } 
   ]
 }

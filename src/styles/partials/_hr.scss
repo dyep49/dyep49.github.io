@@ -3,6 +3,11 @@
   li {
     display: inline-block;
     margin: .5em;
+    
+    button {
+      color: black;
+      cursor: default;
+    }
 
     .btn-lang {
       background: #0f0

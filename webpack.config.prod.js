@@ -2,14 +2,17 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const jadeData = JSON.stringify({obj: require('./data/projects.json')});
+const projects = require('./data/projects.json');
+const skills = require('./data/skills.json');
+const jadeObj = Object.assign({}, skills, projects);
+const jadeData = JSON.stringify({obj: jadeObj});
 
 module.exports = {
   entry: [
     './src/scripts/app'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, './'),
     filename: 'dist_bundle.js'
   },
   plugins: [
