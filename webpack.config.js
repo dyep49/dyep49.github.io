@@ -1,4 +1,7 @@
 const path = require('path');
+const commonPlugins = require('./webpack/common-plugins.js');
+const devPlugins = require('./webpack/dev-plugins.js');
+const plugins = commonPlugins.concat(devPlugins);
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -12,6 +15,6 @@ module.exports = {
     path: path.join(__dirname, '/dev'),
     filename: 'dist_bundle.js'
   },
-  plugins: require('./webpack/common-plugins.js').concat(require('./webpack/dev-plugins.js')),
+  plugins: plugins,
   module: require('./webpack/module.js')
 };

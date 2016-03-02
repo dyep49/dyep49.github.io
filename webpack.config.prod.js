@@ -6,7 +6,7 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, './'),
-    filename: 'dist_bundle.js'
+    filename: 'dist/dist_bundle.js'
   },
   plugins: require('./webpack/common-plugins.js'),
   module: require('./webpack/module.js')

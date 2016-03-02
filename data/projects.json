@@ -4,7 +4,7 @@
       "name": "Umpire Auditor",
       "description" : "Analyzes every pitch in the MLB every night, ranks umpires based on the percentage of calls they make correctly, and returns the worst call of the night. API built on Rails with an AngularJS front end hosted on Businessweek",
       "github" : "https://github.com/dyep49/Angular-Umpire-Auditor",
-      "link" : "http:e//www.businessweek.com/graphics/baseballs-worst-call-of-the-day/#/",
+      "link" : "http://www.businessweek.com/graphics/baseballs-worst-call-of-the-day/#/",
       "image" : "umpire.jpg"
     },
     {

@@ -36,12 +36,8 @@ module.exports = {
       include: /data/
     },
     {
-      test: /\.(png|jpg)$/,
-      loader: 'url?limit=25000'
-    },
-    {
-      test: /\.gif$/,
-      loader: 'file'
+      test: /\.(gif|png|jpg)$/,
+      loader: 'file?name=dist/img/[name].[ext]&url?limit=25000'
     }
   ],
   eslint: {
