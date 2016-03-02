@@ -1,11 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
-const projects = require('./data/projects.json');
-const skills = require('./data/skills.json');
-const jadeObj = Object.assign({}, skills, projects);
-const jadeData = JSON.stringify({obj: jadeObj});
 
 module.exports = {
   entry: [
@@ -15,63 +8,6 @@ module.exports = {
     path: path.join(__dirname, './'),
     filename: 'dist_bundle.js'
   },
-  plugins: [
-    new webpack.NoErrorsPlugin(),
-    new webpack.optimize.UglifyJsPlugin(),
-    new HtmlWebpackPlugin({
-      template: 'apply?' + jadeData + '!jade-loader!./src/index.jade',
-    }),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
-    })
-  ],
-  module: {
-    preLoaders: [
-      {
-        test: /\.js$/, 
-        loaders: ['eslint'],
-        exclude: /(node_modules)|(\/src\/scripts\/vendor)/,
-      }
-    ],
-    loaders: [
-      {
-        test: /\.js/,
-        loaders: ['babel'],
-        include: path.join(__dirname, 'src')
-      },
-      {
-        test: /\.scss$/,
-        include: /src/,
-        exclude: /node_modules/,
-        loaders: [
-          'style',
-          'css',
-          'sass?outputStyle=expanded'
-        ]
-      },
-      {
-        test: /\.jade$/,
-        loader: 'jade',
-        include: /(src\/views)|(src\/scripts)/,
-        exclude: /node_modules/
-      },
-      {
-        test: /\.json$/,
-        loader: 'json',
-        include: /data/
-      },
-      {
-        test: /\.(png|jpg)$/,
-        loader: 'url?limit=25000'
-      },
-      {
-        test: /\.gif$/,
-        loader: 'file'
-      }
-    ],
-    eslint: {
-      configFile: '/.eslintrc'
-    }
-  }
+  plugins: require('./webpack/common-plugins.js'),
+  module: require('./webpack/module.js')
 };
